@@ -1,0 +1,599 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+
+/* Navbar  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Overpass", sans-serif;
+}
+
+.dark {
+  display: none;
+}
+
+.ham_icon {
+  display: none;
+  position: absolute;
+  right: 5rem;
+  top: 3rem;
+}
+
+.ham_icon .ham,
+.ham_icon .close {
+  display: none;
+}
+
+.mobile_nav {
+  z-index: 1 !important;
+  opacity: 1 !important;
+}
+
+.mobile {
+  display: none;
+}
+
+/* Navbar */
+
+nav {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  padding-top: 3rem;
+  inset: auto 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+nav .img_container {
+  position: relative;
+  float: left;
+}
+
+nav .container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .container .nav_container {
+  position: relative;
+  right: 25rem;
+  display: flex;
+}
+
+nav .container .nav_container .dropdown {
+  overflow: hidden;
+  float: left;
+}
+
+nav .container .nav_container .dropdown a {
+  text-decoration: none;
+}
+
+nav .container .nav_container .dropdown .head {
+  font-size: 18px;
+  color: hsla(0, 0%, 100%, 0.627);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-weight: 500;
+  margin: 0;
+}
+
+nav .container .nav_container .dropdown .head:hover {
+  color: hsl(0, 0%, 100%);
+  text-decoration: underline;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 120px;
+  z-index: 1;
+  border-radius: 9px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.dropdown .dropdown-content a {
+  float: none;
+  color: hsla(237, 23%, 32%, 0.578);
+  display: block;
+  text-align: left;
+  padding: 12px 16px;
+}
+
+.dropdown .dropdown-content a:hover {
+  color: hsl(208, 49%, 24%);
+  font-weight: 400;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:focus .dropdown-content {
+  display: block;
+}
+
+.register_btns a {
+  text-decoration: none;
+  color: hsla(0, 0%, 100%, 0.666);
+  font-size: 18px;
+  margin-right: 1rem;
+}
+
+.register_btns a:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+.register_btns button,
+.btn1 {
+  border: none;
+  outline: none;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: hsl(353, 100%, 62%);
+  padding: 1rem 1.5rem;
+  border-radius: 25px;
+}
+
+.register_btns button:hover,
+.btn1:hover {
+  cursor: pointer;
+  background-color: hsl(355, 100%, 74%);
+  color: hsl(0, 0%, 100%);
+}
+
+/* Section 1 */
+
+.section-1 {
+  background: url("images/bg-pattern-intro-desktop.svg"),
+    linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 100%);
+  background-size: 160% auto;
+  background-position: center;
+  min-height: 85vh;
+  border-radius: 0 0 0 7rem;
+}
+
+.section-1 .hero_container {
+  position: relative;
+  top: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero_container h1 {
+  font-size: 4rem;
+}
+
+.hero_container h4 {
+  font-weight: 300;
+  opacity: 0.7;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.hero_btn_container {
+  margin-top: 2rem;
+}
+
+.btn2 {
+  padding: 1rem;
+  margin-left: 1rem;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  border: 0.5px solid hsl(0, 0%, 100%);
+  background: none;
+  outline: none;
+  color: hsl(0, 0%, 100%);
+  transition: all 0.3s ease;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.btn2:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(353, 100%, 62%);
+}
+
+/* Section 2 */
+
+.section-2 {
+  display: flex;
+  margin-top: 5.5rem;
+}
+
+.section-2 .container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 7rem;
+}
+
+.section-2 .container h1 {
+  position: relative;
+  bottom: 5rem;
+  left: 23rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: hsl(208, 49%, 24%);
+}
+
+.section-2 .container .info_container {
+  position: relative;
+  left: 8rem;
+  margin-right: 3rem;
+  padding: 3rem;
+  padding-right: 6rem;
+}
+
+.section-2 .container .info_container .info_content {
+  margin-bottom: 2.5rem;
+}
+
+.section-2 .container .info_container .info_content h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: hsl(208, 49%, 24%);
+}
+
+.section-2 .container .info_container .info_content p {
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  opacity: 0.6;
+  line-height: 1.5;
+}
+
+.section-2 .img_container {
+  min-width: 50vw;
+  overflow: hidden;
+}
+
+.section-2 .img_container img {
+  position: relative;
+  left: 7rem;
+}
+
+/* Section 3 */
+
+.section-3 {
+  display: flex;
+  background: url(images/bg-pattern-circles.svg),
+    linear-gradient(90deg, hsl(237, 17%, 21%) 0%, hsl(237, 23%, 32%) 100%);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  margin: 3rem 0;
+  border-radius: 0 6rem 0 6rem;
+  max-height: 60vh;
+  color: hsl(0, 0%, 100%);
+}
+
+.section-3 .img_container {
+  position: relative;
+  left: 5rem;
+  bottom: 4rem;
+}
+
+.section-3 .info_container {
+  position: relative;
+  margin: auto;
+  padding: 0 10rem;
+}
+
+.section-3 .info_container h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.section-3 .info_container p {
+  font-size: 20px;
+  font-family: "Overpass", sans-serif;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+/* Section 4 */
+
+.section-4 {
+  display: flex;
+  margin: 7rem 0;
+}
+
+.section-4 .img_container {
+  position: relative;
+  right: 17rem;
+}
+
+.section-4 .info_container {
+  position: relative;
+  top: 10rem;
+  right: 12rem;
+}
+
+.section-4 .info_container .info_content {
+  margin-bottom: 1.5rem;
+}
+
+.section-4 .info_container h3 {
+  font-size: 2rem;
+  color: hsl(208, 49%, 24%);
+  margin-bottom: 1.5rem;
+}
+
+.section-4 .info_container p {
+  font-size: 16px;
+  opacity: 0.7;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.5;
+}
+
+/* Footer */
+
+footer {
+  background-color: hsl(240, 10%, 16%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 0 6rem 0 0;
+  margin-top: 5rem;
+  font-family: "Overpass", sans-serif;
+}
+
+footer .container {
+  display: flex;
+  padding: 5rem 0;
+  justify-content: space-evenly;
+}
+
+footer .container .img_container,
+footer .container .first,
+footer .container .second,
+footer .container .third {
+  transform: translateX(-5rem);
+}
+
+footer .container h4 {
+  margin-bottom: 2rem;
+}
+
+footer .container ul li {
+  opacity: 0.6;
+  line-height: 2;
+  cursor: pointer;
+}
+
+footer .container ul li:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Media Queries */
+
+@media (max-width: 1387px) {
+  nav .container .nav_container {
+    right: 20rem;
+  }
+}
+
+@media (max-width: 1235px) {
+  nav .container .nav_container {
+    right: 15rem;
+  }
+}
+
+@media (max-width: 1180px) {
+  .laptop {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+  }
+  .hero_container h1 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .hero_container h4 {
+    font-size: 0.8rem;
+  }
+  .btn1 {
+    font-size: 14px;
+    padding: 0.7rem 1rem;
+  }
+  .btn2 {
+    padding: 0.7rem;
+    font-size: 0.8rem;
+  }
+  .section-2 {
+    overflow: hidden;
+  }
+  .section-2 .container {
+    inset: 0;
+    top: 7rem;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+  }
+  .section-2 .container h1 {
+    font-size: 1.8rem;
+    left: 0;
+  }
+  .section-2 .container .info_container {
+    left: 0;
+    margin-right: 0;
+    padding: 0 3rem;
+    top: 3rem;
+    text-align: center;
+    margin-bottom: 25rem;
+  }
+  .section-2 .container .info_container .info_content h3 {
+    font-size: 1.8rem;
+  }
+  .section-2 .container .info_container .info_content p {
+    font-size: 14px;
+  }
+  .section-2 .img_container img {
+    width: 300px;
+  }
+  .section-3 {
+    flex-direction: column;
+    min-height: 80vh;
+  }
+  .section-3 .img_container {
+    left: 0;
+    bottom: 12rem;
+    width: 325px;
+  }
+  .section-3 .img_container img {
+    width: 100%;
+  }
+  .section-3 .info_container {
+    padding: 8rem 3rem;
+    bottom: 15rem;
+    text-align: center;
+  }
+  .section-3 .info_container h1 {
+    font-size: 1.5rem;
+  }
+  .section-3 .info_container p {
+    font-size: 14px;
+  }
+  .section-4 {
+    flex-direction: column;
+  }
+  .section-4 .img_container {
+    margin: auto;
+    inset: 0;
+  }
+  .section-4 .img_container img {
+    width: 325px;
+  }
+  .section-4 .info_container {
+    top: 5rem;
+    right: 0;
+    align-items: center;
+    text-align: center;
+    padding: 0 3rem;
+  }
+  .section-4 .info_container h3 {
+    font-size: 1.7rem;
+  }
+  .section-4 .info_container p {
+    font-size: 14px;
+  }
+  footer .container {
+    flex-direction: column;
+    margin: auto;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .container .img_container,
+  footer .container .first,
+  footer .container .second,
+  footer .container .third {
+    transform: translateX(0);
+  }
+  footer .container .img_container {
+    margin-bottom: 2rem;
+  }
+  footer .container h4 {
+    margin-bottom: 1rem;
+  }
+  footer .container div {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 1080px) {
+  .ham_icon {
+    display: block;
+  }
+  .ham_icon .ham {
+    display: block;
+    z-index: 1;
+  }
+  nav .img_container {
+    position: absolute;
+    left: 4rem;
+    top: 3rem;
+  }
+  .light {
+    display: none;
+  }
+  .dark {
+    display: inline-block;
+  }
+  nav .container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 15rem;
+    top: 15vh;
+    min-width: 80vw;
+    min-height: 80vh;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 9px;
+    z-index: -1;
+    opacity: 0;
+    box-shadow: 14px 25px 47px 2px rgba(0, 0, 0, 0.28);
+  }
+  nav .container .nav_container {
+    right: 0;
+    bottom: 5rem;
+    flex-direction: column;
+    padding: 3rem;
+  }
+  nav .container .nav_container .dropdown {
+    margin: 1.3rem;
+  }
+  nav .container .nav_container .dropdown .head {
+    color: hsl(208, 49%, 24%);
+    font-size: 1.3rem;
+  }
+  nav .container .nav_container .dropdown .head:hover {
+    color: hsl(208, 49%, 24%);
+    text-decoration: underline;
+  }
+  nav .container .register_btns {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .register_btns a {
+    color: hsl(208, 49%, 24%);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .register_btns a:hover {
+    color: hsl(208, 49%, 24%);
+  }
+  .register_btns button {
+    color: hsl(0, 0%, 100%);
+    background: linear-gradient(
+      90deg,
+      hsl(13, 100%, 72%) 0%,
+      hsl(353, 100%, 62%) 100%
+    );
+  }
+}
